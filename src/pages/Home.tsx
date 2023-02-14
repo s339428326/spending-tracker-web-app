@@ -15,7 +15,7 @@ function Home() {
   }, [theme]);
 
   const handleThemeSwitch = () => {
-    setTheme((preValue) => (preValue === 'dark' ? 'light' : 'dark'));
+    setTheme((preValue): string => (theme === 'dark' ? 'light' : 'dark'));
   };
 
   return (
